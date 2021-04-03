@@ -40,7 +40,7 @@ public class TelaInicial extends JFrame {
         btnEnviar.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                trataEnventoOnClickCancelar();
+                trataEnventoOnClickEnviar();
             }
         });
 
@@ -62,7 +62,7 @@ public class TelaInicial extends JFrame {
         tela.add(btnEnviar);
     }
 
-    private void trataEnventoOnClickCancelar() {
+    private void trataEnventoOnClickEnviar() {
         JOptionPane.showMessageDialog(this, "O usuário " + txtNome.getText() + " com " + txtCPF.getValue() + " é " + cmbTipoUsuario.getSelectedItem());
     }
 
